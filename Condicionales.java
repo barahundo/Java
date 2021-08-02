@@ -76,5 +76,6 @@ public class Condicionales{
         char c=sc.next().charAt(0);
         System.out.print("es la letra una vocal? "+vocalMinuscula(c));
         sc.close();
+        //voy entendiendo git
     }
 }
