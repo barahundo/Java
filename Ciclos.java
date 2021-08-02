@@ -24,5 +24,6 @@ public class Ciclos{
         System.out.println("the end");
         System.out.println(i+" , "+j);*/
         System.out.println(minNum());
+        //nada
     }
 }
