@@ -19,5 +19,6 @@ public class Reto1{
         int iip=sc.nextInt();
         simVirus(iip);
         sc.close();
+        //probando git
     }
 }
