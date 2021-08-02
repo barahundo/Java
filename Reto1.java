@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-import javax.lang.model.util.ElementScanner6;
 public class Reto1{
     public static void simVirus(int iip){
         int iih=(iip*2)+4;
