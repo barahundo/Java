@@ -36,6 +36,21 @@ public class prblmCiclos{
         }
         return e;
     }
+    //factorial recursivo
+    public static int factorial(int x){
+        if (x==1){
+            return 1;
+        }else{
+            return x* factorial(x-1);
+        }
+    }
+    public static int potencia2(int n){
+        int p=2;
+        for(int i=1;i<n;i++){
+            p*=2;
+        }
+        return p;
+    }
     public static void main(String[] args) {
         cuadrados(1,100);
         im_pares(1,99);
@@ -43,5 +58,9 @@ public class prblmCiclos{
         im_paresInv(10);
         System.out.println("En el año "+poblacion()+" la población de A superará la d B");
         System.out.println("El menor numero q puede representar este pc es "+ep());
+        for (int i=1;i<=10;i++){
+            System.out.println(i+"! "+factorial(i));
+        }
+        System.out.println("potencia de 2 elevado a: "+5+" = "+potencia2(5));
     }
 }
