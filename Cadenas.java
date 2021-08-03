@@ -13,5 +13,6 @@ public class Cadenas{
         System.out.println(c2.length());
         System.out.println(c2.charAt(1));
         System.out.println(c2.substring(8,15));
+        sc.close();
     }
 }
