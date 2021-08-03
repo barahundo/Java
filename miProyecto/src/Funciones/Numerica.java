@@ -25,6 +25,9 @@ public class Numerica {
         }
         System.out.println();
     }
+    /** 
+     * imprime los pares desendientes hasta 2
+     */
     public static void descendente(int in){
         for(int i=in%2==0?in:in-1;i>=2;i-=2){
             System.out.println(i);
