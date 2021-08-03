@@ -44,12 +44,31 @@ public class prblmCiclos{
             return x* factorial(x-1);
         }
     }
+    //factorial recursivo ternario
+    public static int factorial2(int x){
+        return (x==1)?1:x*factorial2(x-1);
+    }
     public static int potencia2(int n){
         int p=2;
         for(int i=1;i<n;i++){
             p*=2;
         }
         return p;
+    }
+    public static double potenciaXaN(double x, int n){
+        double r=x;
+        for(int i=1; i<n; i++){
+            r*=x;
+        }
+        return r;
+    }
+    public static void tablasMultiplicar(){
+        for (int i=1;i<=10;i++){
+            for (int j=1;j<=10;j++){
+                System.out.println(i+" x "+j+" = "+(i*j));
+            }
+            System.out.println();
+        }
     }
     public static void main(String[] args) {
         cuadrados(1,100);
@@ -62,5 +81,7 @@ public class prblmCiclos{
             System.out.println(i+"! "+factorial(i));
         }
         System.out.println("potencia de 2 elevado a: "+5+" = "+potencia2(5));
+        System.out.println("potencia de "+8+" a la "+2+" = "+potenciaXaN(2,5));
+        tablasMultiplicar();
     }
 }
