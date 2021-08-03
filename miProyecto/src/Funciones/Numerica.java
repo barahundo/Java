@@ -34,4 +34,21 @@ public class Numerica {
         }
         System.out.println();
     }
+    /**
+     * 
+     * @param n //numero de terminos
+     * @return //!n
+     */
+    private static int factorial(int n){
+        return (n==1)?1:n*factorial(n-1);
+    }
+    /**
+     * 
+     * @param n //numero de terminos a imprimir
+     */
+    public static void impFactorial(int n){
+        for(int i=1;i<=n;i++){
+            System.out.println(factorial(i));
+        }
+    }
 }
