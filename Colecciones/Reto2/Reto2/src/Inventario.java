@@ -8,27 +8,28 @@ public class Inventario {
         String ln=sc.nextLine();
         String []rv=ln.split("&");
         String opc= rv[0];
-           while (opc!="3"){        
-            if (opc=="1"){
+           while (!opc.equals("3")){        
+            if (opc.equals("1")){
                 int id= Integer.parseInt(rv[2]);
                 float precio=Float.parseFloat(rv[3]);
                 boolean molido=Boolean.parseBoolean(rv[4]);
                 /*String n=Integer.toString(count);
                 String variable="obj"+n;*/
-                if (rv[1]=="Arabigo"){
+                if ("Arabigo".equals(rv[1])){
                     Arabigo ob=new Arabigo(id, precio, molido, rv[5], rv[6]);
                     ob.impObj();
-                }else if (rv[1]=="Robusta"){
+                }else if ("Robusta".equals(rv[1])){
                     float cant=Float.parseFloat(rv[5]);
-                    Robusta ob=new Robusta(id, precio, molido, cant, rv[1]);
-                    ob.impObj();
+                    Robusta ob=new Robusta(id, precio, molido, cant, rv[1]); 
+                    ob.impObj();                   
                 }
-            }else if (opc=="2"){
+            }else if (opc.equals("2")){
                 //ob.impObj();
             }
             System.out.println();
             ln=sc.nextLine();
-            rv=ln.split("&");         
+            rv=ln.split("&"); 
+            opc= rv[0];        
         }
         sc.close();
         System.exit(0);
