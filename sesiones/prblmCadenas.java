@@ -26,18 +26,20 @@ public class prblmCadenas{
         return v;
     }
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        /*System.out.print("ingrese un texto: ");
+        Scanner sc= new Scanner(System.in);       
+        System.out.print("ingrese un texto: ");
         String c2=sc.nextLine();
         System.out.print("ingrese una letra: ");
         char c=sc.next().charAt(0);
-        System.out.println(cuentaLetra(c,c2));*/
+        System.out.println(cuentaLetra(c,c2));
+        Scanner sc2= new Scanner(System.in);
         System.out.print("ingrese un texto: ");
-        String t=sc.nextLine();
+        String t=sc2.nextLine();
         System.out.print("ingrese otro texto: ");
-        String t1=sc.nextLine();
+        String t1=sc2.nextLine();
         System.out.println("los textos son = ? "+sonIguales(t, t1));
         System.out.println(invertirCadena(t));
+        sc2.close();
         sc.close();
     }
 }

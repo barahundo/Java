@@ -10,6 +10,6 @@ public class Pareja<K,V> {
     public K clave(){return clave;}
     public V valor(){return valor;}
     public String toString(){
-        return "("+clave+","+valor+")";
+        return "("+clave+" , "+valor+")";
     }
 }
