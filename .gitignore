@@ -1,3 +1,7 @@
 /ejemplosClase/ejemplosClase/nbproject/private/
 /ejemplosClase/ejemplosClase/build/
-Jk.code-workspace
+*.code-workspace
+*.json
+/Reto2/Reto2/bin
+/Reto2/Reto2/lib
+/Reto2/Reto2/.vscode
